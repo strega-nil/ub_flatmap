@@ -187,9 +187,7 @@ void ub_flatmap_init(
 ) {
   ub_flatmap_init(self, keys_equal, sizeof(Key), sizeof(Value));
 }
-#endif
 
-#ifdef UB_FLATMAP_CXX_OVERLOADING
 template <typename T, typename U>
 void* ub_flatmap_insert(
   ub_flatmap* self,
@@ -204,9 +202,7 @@ void* ub_flatmap_insert(
     static_cast<void*>(old_value)
   );
 }
-#endif
 
-#ifdef UB_FLATMAP_CXX_OVERLOADING
 template <typename T>
 void* ub_flatmap_get(
   ub_flatmap* self,
