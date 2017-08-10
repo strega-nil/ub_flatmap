@@ -4,10 +4,6 @@
 #define UB_FLATMAP_CXX_OVERLOADING
 #include "ub_flatmap.h"
 
-int int_eq(void const* lhs, void const* rhs) {
-  return *(int const*)lhs == *(int const*)rhs;
-}
-
 int main() {
 	ub_flatmap kv;
 	ub_flatmap_init<int, int>(&kv);
